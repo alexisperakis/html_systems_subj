@@ -66,77 +66,44 @@
 .dropdown-menu p{
     margin: 10px
 }
-.files input {
-    outline: 2px dashed #92b0b3;
-    outline-offset: -10px;
-    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
-    transition: outline-offset .15s ease-in-out, background-color .15s linear;
-    padding: 120px 0px 85px 35%;
-    text-align: center !important;
-    margin: 0;
-    width: 100% !important;
-}
-.files input:focus{     outline: 2px dashed #92b0b3;  outline-offset: -10px;
-    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
-    transition: outline-offset .15s ease-in-out, background-color .15s linear; border:1px solid #92b0b3;
- }
-.files{ position:relative}
-.files:after {  pointer-events: none;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 50px;
-    right: 0;
-    height: 56px;
-    content: "";
-    background-image: url(https://image.flaticon.com/icons/png/128/109/109612.png);
-    display: block;
-    margin: 0 auto;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.color input{ background-color:#f1f1f1;}
-.files:before {
-    position: absolute;
-    bottom: 10px;
-    left: 0;  pointer-events: none;
-    width: 100%;
-    right: 0;
-    height: 57px;
-    content: " or drag it here. ";
-    display: block;
-    margin: 0 auto;
-    color: #2ea591;
-    font-weight: 600;
-    text-transform: capitalize;
-    text-align: center;
-}
 
 header.masthead {
+    overflow: hidden;
     padding-top: 17rem;
-    padding-bottom: rem;
+    padding-bottom:17rem;
     text-align: right;
+    padding-right: 3rem;
 }
 header.masthead {
     padding-top: 6rem;
     padding-bottom: 15rem;
     text-align: right;
     color:white;
-    background-image: url("athens4.jpg");
+    background-image: url("athenssmall.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
 }
+
+@media (min-width: 600px) {
+    header.masthead {
+      background-image: url('athensmed.png');
+    }
+}
+
+@media (min-width: 1320px) {
+    header.masthead {
+      background-image: url('athenslarge.png');
+    }
+}
 header.masthead .masthead-heading {
     font-size: 2.2rem;
     line-height: 2.25rem;
     margin-bottom: 2rem;
-    margin-right: -10rem;
 }
 header.masthead .masthead-subheading {
     font-size: 1.5rem;
-    margin-right: -10rem;
 
 }
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -158,4 +125,42 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 .center p {
     font-size: 1;
+}
+
+.row{
+    margin-right: 0px;
+    margin-left: 0px;
+    text-align: center;
+}
+
+.container{
+    margin-right: 0px;
+    margin-top: 40px;
+}
+
+hr.h1{
+    border: 0.3px solid black;
+}
+
+@media (min-width: 992px){
+    hr.h1{
+        display:none;
+    }
+    .row-relative {
+        position: relative;
+        text-align: left;
+    }
+    .col-border-padding {padding-left: 15px;}
+    .col-border{
+        padding-left: 0;
+        position: static;
+    }
+    
+    .col-border:before{
+        content:"";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        border-left: 1px solid red;
+    }
 }
