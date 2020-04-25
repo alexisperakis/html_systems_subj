@@ -1,3 +1,6 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
 @media (max-width: 1000px) { 
     .red_space{
         display: none !important;
@@ -67,6 +70,17 @@
     margin: 10px
 }
 
+p.copyright {
+    margin-top: 10rem;
+    width: 90%;
+    color:black;
+    line-height: 20px;
+    font-size: 0.7em;
+    text-align: left;
+    margin-left: 15px;
+    bottom:0;
+}
+
 header.masthead {
     overflow: hidden;
     padding-top: 17rem;
@@ -75,37 +89,45 @@ header.masthead {
     padding-right: 3rem;
 }
 header.masthead {
-    padding-top: 6rem;
-    padding-bottom: 15rem;
+    padding-top: 11rem;
+    padding-bottom: 18rem;
     text-align: right;
     color:white;
-    background-image: url("athenssmall.png");
+    background-image: url("roadsmall.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
     header.masthead {
-      background-image: url('athensmed.png');
+      background-image: url('roadlarge.jpg');
     }
 }
 
-@media (min-width: 1320px) {
-    header.masthead {
-      background-image: url('athenslarge.png');
-    }
-}
-header.masthead .masthead-heading {
-    font-size: 2.2rem;
+.masthead-heading {
+    font-size: 2.5rem;
     line-height: 2.25rem;
     margin-bottom: 2rem;
 }
-header.masthead .masthead-subheading {
+
+@media (min-width: 1200px) {
+    .masthead-heading {
+        font-size: 3rem;
+    }
+}
+.masthead-subheading {
     font-size: 1.5rem;
 
 }
+
+@media (min-width: 1200px) {
+    .masthead-subheading {
+        font-size: 2rem;
+    }
+}
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     display: block;
 }
@@ -131,6 +153,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     margin-right: 0px;
     margin-left: 0px;
     text-align: center;
+    font-size: 1.4rem;
 }
 
 .container{
@@ -138,12 +161,17 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     margin-top: 40px;
 }
 
-hr.h1{
+hr.hr2{
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    border: 0.1px solid grey;
+}
+hr.hr1{
     border: 0.3px solid black;
 }
 
 @media (min-width: 992px){
-    hr.h1{
+    hr.hr1{
         display:none;
     }
     .row-relative {
@@ -163,4 +191,30 @@ hr.h1{
         bottom: 0;
         border-left: 1px solid red;
     }
+
 }
+
+.section-heading {
+    margin-top: 3rem;
+    margin-right: 30rem;
+    margin-left: 30rem;
+}
+
+
+#team-paragraph{
+    color: grey;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+@media (min-width: 1200px){
+    #team-paragraph{
+        padding-left: 30rem;
+        padding-right: 30rem;
+    }
+}
+
+.team-member{
+    margin-bottom: 2rem;
+}
+
