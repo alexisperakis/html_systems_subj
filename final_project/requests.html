@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Requests - Materials - Purchase Orders</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel = "stylesheet" type="text/css" href = "our_css/requests_Style.css" >
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-left" href="https://ellaktor.com/etaireies-omiloy/aktor/" 
+           title = "Πατήστε για να μεταφερθείτε στην κεντρική ιστοσελίδα της ΑΚΤΩΡ" target="_blank" id = "logo_aktor">
+          <img border="0" alt="ΑΚΤΩΡ" src="our_images/icon_logo.png" >
+        </a>
+        <a class="navbar-brand" href="requests.html">Σύστημα ελέγχου αποθήκης</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Αρχική</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="red_space">
+          <a class="navbar-left"></a>
+            <div id="navbar-img"></div>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-info-sign"></span> Βοήθεια
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu help">
+            <p>
+              Αυτή είναι η οθόνη που θα χρησιμοποιείσει ο Υπεύθυνος παραγγελιών για να δεί εκρεμή αιτήματα υλικών τα οποία έχουν γίνει 
+              απο άλλα τμήματα/ υπεύθυνους μηχανικούς κλπ , αιτήματα υλικών τα οποία έχουν μπεί στη διαδικασία εύρεσης προμηθευτή, τις 
+              προσφορές προμηθευτών για τα εκάστοτε υλικά και τέλος ις παραγγελιεσ σε εξέλιξη. <br> ΠΡΟΣΟΧΗ: στα πλαίσια της εργασίας 
+              απο τα παρακάνω thubnails έχει υλοποιηθεί μόνο τα "εκκρεμή αιτήματα υλικών".
+            </p>
+          </ul>
+        </li>
+        <li><a href="central.html"><span class="glyphicon glyphicon-home"></span> Επιστροφή στην αρχική</a></li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+
+    <style>
+      body {
+        background-image: url('our_images/redback3.jpg');
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+        overflow: hidden; 
+      }
+    </style>
+
+    <div class = header>
+      <div class = "Orders">
+        <h2><br>Υπεύθυνος Παραγγελιών</h2>
+      </div>
+    </div>
+
+      <div class="row">
+        <hr class="Line">
+        <div class="col-sm-3 col-xs-9" id = "protothab">
+            <div class="thumbnail" >
+              <img src = "our_images/ilika2.jpg" alt = "image" class="img-thumbnail">
+              <div class="caption">
+                <h2>Εκκρεμή Αιτήματα Υλικών</h2>
+                <p>Τα Αιτήματα Υλικών που έγιναν απο τα τμήματα. </p>
+                <p><a href="..." class="btn btn-primary" role="button"><span class="glyphicon glyphicon-link" ></span> More</a></p>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 col-xs-9" id = "defterothab">
+          <div class="thumbnail">
+            <img src="our_images/search2.jpg" alt="image" class="img-thumbnail">
+            <div class="caption">
+              <h2>Αιτήματα σε στάδιο εύρεσης Προμηθρυτή</h2>
+              <p>Aιτήματα υλικών χωρίς προμηθευτή.</p>
+              <p><a href="..." class="btn btn-primary" role="button"><span class="glyphicon glyphicon-link"></span> More</a></p>
+           </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-3 col-xs-9" id = "tritothab">
+            <div class="thumbnail">
+              <img src="our_images/suplier2.jpg" alt="image" class="img-thumbnail">
+              <div class="caption">
+                <h2>Προσφορές προμηθευτών</h2>
+                <p>Όλες οι προσφορές που έχουν γίνει απο προμηθευτές.</p>
+                <p><a href="..." class="btn btn-primary" role="button"><span class="glyphicon glyphicon-link"></span> More</a></p>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 col-xs-9" id = "tetartothab"> 
+            <div class="thumbnail">
+              <img src="our_images/purchase2.jpg" alt="image" class="img-thumbnail">
+              <div class="caption">
+                <h2>Παραγγελίες σε εξέλιξη </h2>
+                <p>Παραγγελίες που δεν έχουν παραδωθεί.</p>
+                <p><a href="..." class="btn btn-primary" role="button"><span class="glyphicon glyphicon-link"></span> More</a></p>
+              </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <footer >
+      <p class="copyright">© 2020 AKTOR </p>
+    </footer>
+
+</body>
+</html>
