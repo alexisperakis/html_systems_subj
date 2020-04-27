@@ -1,0 +1,173 @@
+body {
+    background-image: url(/our_images/redback3.jpg);
+    background-size: cover;
+    margin-top: 1.3cm;
+}
+.container {
+    border-color: rgba(245, 31, 3, 0.699);
+    margin-top: 2cm;
+    border-style: double;
+    background-color: rgba(201, 195, 195, 0.418);
+
+}
+.row2 input {
+    padding: 120px 100px 85px 20%;
+    text-align: center; 
+    margin: 0;
+    width: 100%; 
+}
+.row input {
+    text-align: center;
+    margin-top: 0.5cm;
+    margin-bottom: 0.5cm;
+    width: 14cm;
+    margin-left: 8.5cm;
+    margin-right: 2.5cm;
+    background-color: rgba(255, 255, 255, 0.842);
+}
+.row2 {
+    margin-left: 5cm;
+    margin-right: 5cm;
+}
+.row3 {
+    text-align: center;
+    margin-top: 1cm;
+}
+@media (max-width: 1200px) {
+
+    .container {width: 70%} 
+    .container .row input {
+        width: 11cm;
+        margin: auto;
+        margin-top: 0.5cm;
+        margin-bottom: 0.5cm;
+        background-color: rgba(255, 255, 255, 0.842);
+    }
+    .container .row2 input {
+        margin: auto;
+        width: 100%;
+        padding: 100px 100px 80px 1%;
+        font-size: 10px;
+    }
+}
+@media (max-width: 1000px) {
+    .container {
+        width: 70%;
+    }
+    .container .row input {
+        width: 8cm;
+        margin: auto;
+        margin-top: 0.5cm;
+        margin-bottom: 0.5cm;
+        background-color: rgba(255, 255, 255, 0.842);
+    }
+    .container .row2 input {
+        width: 12cm;
+        margin: auto;
+        margin-left: -3.5cm;
+        
+    }
+    body {
+        background-size: cover;
+    }
+}
+@media (max-width: 800px) {
+    .container {
+        width: 70%;
+    }
+    .container .row input {
+        width: 8cm;
+        margin: auto;
+        margin-top: 0.5cm;
+        margin-bottom: 0.5cm;
+        background-color: rgba(255, 255, 255, 0.842);
+    }
+    .container .row2 input {
+        width: 9cm;
+        margin: auto;
+        margin-left: -4cm;
+        
+    }
+    .files::before {
+        font-size: x-small;
+        text-align: center;
+    }
+    body {
+        background-size: cover;
+    }
+}
+h2 {
+	background-color: #787878dc;
+	color: seashell;
+	text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 0.3cm;
+    padding-bottom: 0.3cm;
+}
+h4 {
+    text-align: center;
+}
+.form-row1 {
+    width: 45%;
+    text-align: center;
+    
+}
+
+.wrapper {
+	text-align: center;
+}
+
+button {
+	text-align: center;
+	background-color: #ebe5e5d8;
+	color: black;
+	font-size: 20px;
+	border-radius: 8px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 140px;
+    margin-bottom: 2cm;
+}
+
+
+#bs-example-navbar-collapse-1>ul>li {
+    margin-left: 0.3cm;
+}
+
+#c1 {
+    margin-top: 1cm;
+}
+.files input:focus{     outline: 2px dashed #92b0b3;  outline-offset: -10px;
+    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear; border:1px solid #7d9294;
+ }
+.files{ position:relative}
+.files:after { 
+	pointer-events: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 50px;
+    right: 0;
+    height: 56px;
+    content: "";
+    background-image: url(https://image.flaticon.com/icons/png/128/109/109612.png);
+    display: block;
+    margin: 0 auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.color input{ background-color:#f1f1f1;}
+.files:before {
+    position: absolute;
+    bottom: 10px;
+    left: 0;  pointer-events: none;
+    width: 100%;
+    right: 0;
+    height: 57px;
+    content: "Ή σύρετε εδώ το αρχείο";
+    display: block;
+    margin: 0 auto;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
