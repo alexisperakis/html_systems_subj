@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <style>
+    body{background-image: url('redtechno.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;}
+   </style>
+  <link rel="icon" href="our_images/icon_logo.jpg">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Επεξεργασία αιτήματος</title>
+  <script src="https://kit.fontawesome.com/e7a2a6eec8.js" crossorigin="anonymous"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="our_css/general.css">
+  <link rel="stylesheet" href="our_css/atomiko.css">  
+  
+</head>
+
+<body>
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+   <div class="container-fluid">
+     <div class="navbar-header">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>                        
+       </button>
+       <a class="navbar-brand" href="https://ellaktor.com/etaireies-omiloy/aktor/" 
+           title = "Πατήστε για να μεταφερθείτε στην ιστοσελίδα το ΑΚΤΩΡ" target="_blank">
+           <img border="0" alt="ΑΚΤΩΡ" src="our_images/aktor.png" heigth="50px" width = 100px>
+       </a>
+     </div>
+    
+     <div class="collapse navbar-collapse" id="myNavbar">
+       <ul class="nav navbar-nav">
+         <li ><a href="central.html" title="Πατηστε για να μεταβειτε στην αρχική οθόνη">Αρχική</a>
+
+        </li>
+       </ul>
+       <ul class="nav navbar-nav navbar-right">
+         <li class="red_space">
+           <a class="navbar-left"></a>
+             <div id="navbar-img"> 
+           </a>
+         </li>
+         <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Βοήθεια<span class="caret"></span></a>
+          <ul class="dropdown-menu help">
+            <p>
+              Αυτή είναι η οθόνη για την αναλυτική περιγραφή του αιτήματος και τη μετάβαση στο σύστημα της αποθήκης.
+            </p>
+          </ul>
+      </li>
+    
+       </ul>
+       
+     </div>
+   </div>
+ </nav>
+ <br><br><br>
+
+
+ <p style="text-align: right;"><u>Ημερομηνία:</u>  <span id="datetime"></span></p>
+
+ <script>
+ var dt = new Date();
+ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+ </script>
+  <div align="center">
+
+<h2 style="color:red"><strong>Επεξεργασία αιτήματος</strong></h2>
+<p ><b>Αριθμός αιτήματος: </b>6<br><b>Αποστολέας:</b>Τμήμα Μάρκετινγκ<br><b>Ημερομηνία Καταχώρησης:</b>10/11/2019<br><b>Σχόλιο:</b>- </p>  </div>
+
+<br>
+</div>
+<div class="table-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:10%;">Κωδικός υλικού</th>
+    <th style="width:10%;">Όνομα υλικού</th>
+    <th style="width:10%;">Ποσότητα</th>
+    <th style="width:15%;">Μονάδα μέτρησης</th>
+
+  </tr>
+  <tr>
+   <td> #41</td>
+  <br>
+    <td>Στυλό μπλε</td>
+    <td>1500</td>
+    <td>τεμάχια</td>
+
+  </tr>
+  <tr>
+    <td> #52</td>
+    <td>Οθόνες υπολογιστή </td>
+    <td>40 </td>
+    <td>τεμάχια</td>
+
+  </tr>
+  <tr>
+    <td> #3</td>
+    <td>Χαρτιά Α4</td>
+    <td>200</td>
+    <td>πακέτο (φ.500) </td>
+
+  </tr>
+  <tr>
+    <td> #769</td>
+    <td>Λάμπες εσωτερικού χώρου</td>
+    <td>2 </td>
+    <td>τεμάχια</td>
+  </tr>
+ 
+  <tr>
+    <td> #347</td>
+    <td>Αυτοκόλλητες ετικέτες 10Χ12</td>
+    <td>400 </td>
+    <td>τεμάχια</td>
+  </tr>
+ 
+  <tr>
+    <td> #564</td>
+    <td>Stabilo πράσινο</td>
+    <td>250 </td>
+    <td>τεμάχια</td>
+  </tr>
+  
+  <tr>
+    <td> #232</td>
+    <td>Σελιδοδείκτες</td>
+    <td>2000 </td>
+    <td>τεμάχια</td>
+  </tr>
+  <tr>
+    <td> #112</td>
+    <td>Εκτυπωτές HP</td>
+    <td>5 </td>
+    <td>τεμάχια</td>
+  </tr>
+</table>
+</div>
+<br>
+<!--
+<input type="text" list="text_editors">
+<datalist id="text_editors">
+    <option value="Atom"></option>
+    <option value="Notepad ++"></option>
+    <option value="Sublime Text"></option>
+    <option value="Wordpad"></option>
+</datalist>
+<p><em>For example;
+   </em> Sublime Text</p>
+   -->
+   
+    <h4 ><u>Επιλέξτε κωδικό υλικού για αναζήτηση αποθέματος</u></h4>
+   
+<form >
+  <label for="products">Επιλέξτε αριθμό:</label>
+  <select id="product" name="products">
+    <option value="Στυλό μπλέ">#41</option>
+    <option value="Οθόνη υπολογιστή">#52</option>
+    <option value="Χαρτιά Α4">#3</option>
+    <option value="Λάμπες εσωτερικού χώρου">#769</option>
+    <option value="Αυτοκόλλητες ετικέτες 10Χ12">#347</option>
+    <option value="Stabilo πράσινο">#564</option>
+    <option value="all">Αναζήτηση όλων</option>
+</select>
+
+  <button type="submit" style="height: 23px; width: 250px"> Έλεγχος στην αποθήκη </button>
+</form>
+<br>
+<marquee behavior="scroll" direction="left" >
+  <img src="our_images/Ακτωρ marq.jpg" width="120" height="80" alt="Natural"  /> 
+  <p>ΕΤΑΙΡΕΙΑ ΤΟΥ ΟΜΙΛΟΥ ΕΛΛΑΚΤΩΡ<sup>&copy</sup></p>
+</marquee>
+
+</body>
+</html>
