@@ -1,7 +1,7 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
-@media (max-width: 1000px) { 
+@media (max-width: 768px) { 
     .red_space{
         display: none !important;
     } 
@@ -12,24 +12,25 @@
     background-image: url(../our_images/vertical_red.png);
   } 
 
-  @media (min-width: 1001px) {   
+  @media (min-width: 768px) {   
       #navbar-img{
-          width: 3px;
+          width: 85px;
       } 
    }
   
-  @media (min-width: 1010px) {      
+  @media (min-width: 900px) {      
         #navbar-img{        
-          width: 60px;
+          width: 200px;
         } 
   }
   @media (min-width: 1230px) {    
        #navbar-img{         
-           width: 270px;
+           width: 400px;
+           background-repeat: ;
        } 
   }
 
-@media (max-width: 1000px) {
+  @media (max-width: 768px) {
     .dropdown-menu{
         position: static;
         background-color: transparent;
@@ -90,11 +91,4 @@
     .help p{
         color: gainsboro;
     }
-}
-
-.help{
-    min-width: 300px;
-}
-.help p{
-    margin: 10px
 }
