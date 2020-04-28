@@ -92,3 +92,10 @@
         color: gainsboro;
     }
 }
+
+.help{
+    min-width: 300px;
+}
+.help p{
+    margin: 10px
+}
