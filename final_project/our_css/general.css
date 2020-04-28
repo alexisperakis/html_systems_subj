@@ -26,7 +26,7 @@
   @media (min-width: 1230px) {    
        #navbar-img{         
            width: 400px;
-           background-repeat: ;
+           background-repeat: no-repeat;
        } 
   }
 
