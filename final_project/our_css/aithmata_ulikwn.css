@@ -3,3 +3,8 @@
 
 .w3-table,.w3-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.w3-table-all{border:1px solid #ccc}
 .w3-table-all tr:nth-child(odd){background-color:#fff}.w3-table-all tr:nth-child(even){background-color:#f1f1f1}
+body {
+    background-image: url(../our_images/redback3.jpg);
+    background-size: cover;
+    margin-top: 1.3cm;
+}
