@@ -10,6 +10,7 @@
     <link rel = "stylesheet" type="text/css" href = "our_css/requests_Style.css" >
     <link rel = "stylesheet" type="text/css" href = "our_css/general.css" >
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://kit.fontawesome.com/e7a2a6eec8.js" crossorigin="anonymous"></script>
     <script src='main.js'></script>
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -34,35 +35,41 @@
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-left" href="https://ellaktor.com/etaireies-omiloy/aktor/" 
-           title = "Πατήστε για να μεταφερθείτε στην κεντρική ιστοσελίδα της ΑΚΤΩΡ" target="_blank" id = "logo_aktor">
-          <img border="0" alt="ΑΚΤΩΡ" src="our_images/aktor.png" heigth="50px" width = 100px>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="https://ellaktor.com/etaireies-omiloy/aktor/" 
+            title = "Πατήστε για να μεταφερθείτε στην ιστοσελίδα της ΑΚΤΩΡ" target="_blank">
+            <img border="0" alt="ΑΚΤΩΡ" src="our_images/aktor.png" heigth="50px" width = 100px>
         </a>
-        <a class="navbar-brand" href="requests.html">Σύστημα ελέγχου αποθήκης</a>
+        <a class="navbar-brand" href="requests.html" title="Σύστημα Ελέγχου Αιτημάτων">Σύστημα Ελέγχου Αιτημάτων</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Αρχική</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="red_space">
-          <a class="navbar-left"></a>
-            <div id="navbar-img"></div>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-info-sign"></span> Βοήθεια
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu help">
-            <p>
-              Αυτή είναι η οθόνη που θα χρησιμοποιείσει ο Υπεύθυνος παραγγελιών για να δεί εκρεμή αιτήματα υλικών τα οποία έχουν γίνει 
-              απο άλλα τμήματα/ υπεύθυνους μηχανικούς κλπ, αιτήματα υλικών τα οποία έχουν μπεί στη διαδικασία εύρεσης προμηθευτή, τις 
-              προσφορές προμηθευτών για τα εκάστοτε υλικά και τέλος ις παραγγελιεσ σε εξέλιξη. <br> ΠΡΟΣΟΧΗ: στα πλαίσια της εργασίας 
-              απο τα παρακάνω thubnails έχει υλοποιηθεί μόνο τα "εκκρεμή αιτήματα υλικών".
-            </p>
-          </ul>
-        </li>
-        <li><a href="central.html"><span class="glyphicon glyphicon-home"></span> Επιστροφή στην αρχική</a></li>
-      </ul>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Αρχική</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="red_space">
+            <a class="navbar-left"></a>
+              <div id="navbar-img" />
+            </a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-info-sign"></span>Βοήθεια
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu help">
+              <p>
+                Αυτή είναι η οθόνη που θα χρησιμοποιείσει ο Υπεύθυνος παραγγελιών για να δεί εκρεμή αιτήματα υλικών τα οποία έχουν γίνει 
+                απο άλλα τμήματα/ υπεύθυνους μηχανικούς κλπ, αιτήματα υλικών τα οποία έχουν μπεί στη διαδικασία εύρεσης προμηθευτή, τις 
+                προσφορές προμηθευτών για τα εκάστοτε υλικά και τέλος ις παραγγελιεσ σε εξέλιξη. ΠΡΟΣΟΧΗ: στα πλαίσια της εργασίας 
+                απο τα παρακάνω thubnails έχει υλοποιηθεί μόνο τα "εκκρεμή αιτήματα υλικών".
+              </p>
+            </ul>
+          </li>
+          <li><a href="central.html"><span class="glyphicon glyphicon-home"></span> Επιστροφή στην αρχική</a></li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -86,6 +93,7 @@
 
       <div class="row">
         <hr class="Line">
+
         <div class="col-xs-18 col-sm-6 col-md-3" id = "protothab">
             <div class="thumbnail" >
               <img src = "our_images/ilika2.jpg" alt = "image" class="img-thumbnail">
@@ -101,7 +109,7 @@
           <div class="thumbnail">
             <img src="our_images/search2.jpg" alt="image" class="img-thumbnail">
             <div class="caption">
-              <h2>Αιτήματα σε στάδιο εύρεσης Προμηθρυτή</h2>
+              <h2>Αιτήματα σε στάδιο εύρεσης Προμηθευτή</h2>
               <p>Aιτήματα υλικών χωρίς προμηθευτή.</p>
               <p><a href="..." class="btn btn-primary" role="button"><span class="glyphicon glyphicon-link"></span> More</a></p>
            </div>
@@ -141,5 +149,6 @@
      <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
      <!-- Include all compiled plugins (below), or include individual files as needed -->
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
 </body>
 </html>
