@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body{background-image: url(/our_images/redback3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;}
+  </style>
+  <style>thead{color:black; }</style>
+  <link rel="icon" href="our_images/icon_logo.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Αιτήματα υλικών</title> 
+  <script src="https://kit.fontawesome.com/e7a2a6eec8.js" crossorigin="anonymous"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="our_css/general.css">
+  <link rel="stylesheet" href="our_css/aithmata_ulikwn.css"> 
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon//manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+
+<body>
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+   <div class="container-fluid">
+     <div class="navbar-header">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>                        
+       </button>
+       <a class="navbar-brand" href="https://ellaktor.com/etaireies-omiloy/aktor/" 
+           title = "Πατήστε για να μεταφερθείτε στην ιστοσελίδα το ΑΚΤΩΡ" target="_blank">
+           <img border="0" alt="ΑΚΤΩΡ" src="our_images/aktor.png" heigth="50px" width = 100px>
+       </a>
+     </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+       <ul class="nav navbar-nav">
+         <li><a href="central.html" title="Πατηστε για να μεταβειτε στην αρχική οθόνη">Αρχική</a></li>
+       </ul>
+       <ul class="nav navbar-nav navbar-right">
+         <li class="red_space">
+           <a class="navbar-left"></a>
+             <div id="navbar-img"> 
+           </a>
+         </li>
+         
+         <li class="dropdown">
+           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Βοήθεια
+           <span class="caret"></span></a>
+           <ul class="dropdown-menu help">
+          <p>
+            Αυτη η οθονη περιέχει ταξινομημένα με βάση την ημερομηνία αποστολής, όλα τα αιτήματα για υλικά που σας έχουν στείλει
+          </p>
+           </ul>
+         </li> 
+       </ul>
+     </div>
+   </div>
+ </nav>
+ <br>
+
+
+ <p style="text-align: right;"><u>Ημερομηνία:</u> <span id="datetime"></span></p>
+
+ <script>
+ var dt = new Date();
+ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+ </script>
+  <div align="center">
+
+<h2 style="color:#e61919"><strong>Αιτήματα υλικών</strong></h2>
+<p><u>Ο ακόλουθος πίνακας περιέχει τα αιτήματα υλικών που σας έχουν αποσταλεί</u></p>
+</div>
+<br>
+<div class="table-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+<thead>
+    <th style="width:10%; background-color: grey">Επιλέξτε το αίτημα που θέλετε να ανοίξετε</th>
+    <th style="width:10%; background-color: grey">Αριθμός αιτήματος</th>
+    <th style="width:20%; background-color: grey">Αποστολέας</th>
+    <th style="width:10%; background-color: grey">Ημερομηνία καταχώρησης αιτήματος</th>
+    <th style="width:15%; background-color: grey">Σχόλια</th>
+    <th style="width:15%; background-color: grey">Υπεύθυνος παραλαβής υλικού</th>
+  </thead>
+
+  </tr>
+  <tr>
+   <td>  <input type="radio"  name="age" ></td>
+  <br>
+    <td>1</td>
+    <td>Τμήμα Μάρκετινγκ </td>
+    <td>24/10/2019</td>
+    <td>Παρακαλώ η παραγγελία να μπεί σε προτεραιότητα</td>
+    <td>Παπαδόπουλος Τ.</td>
+
+  </tr>
+  <tr>
+    <td>  <input type="radio" name="age" ></td>
+    <td>2</td>
+    <td>Τμήμα Μάρκετινγκ </td>
+    <td>26/10/2019</td>
+    <td>Παράδοση το αργότερο μέχρι 30 Νοέμβρη</td>
+    <td>Κόλλιας Κ.</td>
+
+  </tr>
+  <tr>
+    <td> <input type="radio" name="age" ></td>
+    <td>3</td>
+    <td>Τμήμα Πληροφορικής </td>
+    <td>30/10/2019 </td>
+    <td> </td>
+    <td>Χριστοδούλου Ε.</td>
+
+  </tr>
+  <tr>
+    <td> <input type="radio" name="age" ></td>
+    <td>4</td>
+    <td>Τμήμα Πληροφορικής </td>
+    <td>2/11/2019</td>
+    <td>Διόρθωση λάθους της παραγγελίας υπ'αριθμόν #3</td>
+    <td>Χριστοδούλου Ε.</td>
+
+  </tr>
+  <tr>
+    <td> <input type="radio" name="age" ></td>
+    <td>5</td>
+    <td>Τμήμα Προμηθειών </td>
+    <td>5/11/2019</td>
+    <td></td>
+    <td>Γιαννακόπουλος Φ.</td>
+
+  </tr>
+  <tr>
+    <td>  <input type="radio" name="age" ></td>
+    <td>6</td>
+    <td>Τμήμα Μάρκετινγκ </td>
+    <td>10/11/2019</td>
+    <td></td>
+    <td>Ρήγας Γ.</td>
+
+  </tr>
+  <tr>
+    <td>  <input type="radio" name="age" ></td>
+    <td>7</td>
+    <td>Τμήμα Διαχείρησης Έργου</td>
+    <td>15/11/2019</td>
+    <td>Πριν προβείτε σε παραγγελία ενημερώστε με για το κόστος</td>
+    <td>Επικεφαλής εργοταξίου 4ης γραμμής μετρό</td>
+
+  </tr>
+  <tr>
+    <td>  <input type="radio" name="age" ></td>
+    <td>8</td>
+    <td>Τμήμα Διοίκησης Ανθρωπίνου Δυναμικού</td>
+    <td>22/11/2019</td>
+    <td></td>
+    <td>Κόκκαλης Ψ.</td>
+
+  </tr>
+
+</table>
+<button type="button">Άνοιγμα Επιλογής</button>
+</div>
+<br><br><br><br><br><br><br><br><br>
+<marquee behavior="scroll" direction="left" >
+  <img src="our_images/aktormarq.jpg" width="120" height="80" alt="Natural"  /> 
+  <p>ΕΤΑΙΡΕΙΑ ΤΟΥ ΟΜΙΛΟΥ ΕΛΛΑΚΤΩΡ<sup>&copy</sup> </p>
+</marquee>
+</body>
+</html>
