@@ -31,13 +31,6 @@ p.copyright {
     bottom:0;
 }
 
-#logo_aktor{
-    margin-left: auto;
-    margin-top: -4px;
-    margin-right: auto;
-    position: sticky;
-}
-
 .header{
     margin: 0px;
 }
@@ -62,9 +55,11 @@ hr.Line{
     margin-bottom: 20px;
     align-self: center;
 }
+
 .type{
     position: absolute;
     bottom: 50px;
     width: 100%;
   }
+
 
