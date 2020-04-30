@@ -82,7 +82,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 .row{
-    margin-right: 0px;
+    margin-right: 6px;
     margin-left: 0px;
     text-align: center;
     font-size: 1.4rem;
@@ -147,4 +147,8 @@ hr.hr1{
 .team-member{
     margin-bottom: 2rem;
 }
+
+.team-member>img{
+    border-radius: 50%;
+  }
 
